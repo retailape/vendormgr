@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<workbook>
+    <worksheet name="Sheet1">        
+    <section startRow="0" endRow="0"/>
+   <!--   <mapping row="0" col="3"></mapping>
+    </section>-->
+        <loop startRow="1" endRow="1" items="products" var="product" varType="com.retailape.apps.vendormgr.model.VendorProducts">
+            <section startRow="1" endRow="1">
+                <mapping row="1" col="0">product.productName</mapping>
+                <mapping row="1" col="1">product.productCode</mapping>
+                 <mapping row="1" col="1">product.key</mapping>
+                <mapping row="1" col="2">product.MRP</mapping>
+                <mapping row="1" col="3">product.RSP</mapping>
+            </section>
+            <loopbreakcondition>  
+                <rowcheck offset="0">  
+                    <cellcheck offset="0">END</cellcheck>  
+                </rowcheck>  
+            </loopbreakcondition>
+           <!--   <loopbreakcondition>  
+                <rowcheck offset="0">  
+                    <cellcheck offset="0">null</cellcheck>  
+                </rowcheck>  
+            </loopbreakcondition>
+             <loopbreakcondition>  
+                <rowcheck offset="0">  
+                    <cellcheck offset="0">""</cellcheck>  
+                </rowcheck>  
+            </loopbreakcondition>
+            <loopbreakcondition>  
+                <rowcheck offset="0">  
+                    <cellcheck offset="0">" "</cellcheck>  
+                </rowcheck>  
+            </loopbreakcondition>-->
+        </loop>
+    </worksheet>
+</workbook>

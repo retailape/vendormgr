@@ -1,0 +1,13 @@
+<web-app id="vendormgr-1.0-SNAPSHOT">
+    <jsp fast-jstl="false"/>
+
+    <!--database>
+        <jndi-name>jdbc/appfuse</jndi-name>
+        <driver type="com.mysql.jdbc.Driver">
+            <url>jdbc:mysql://106.186.19.19/blrcart?createDatabaseIfNotExist=true&amp;useUnicode=true&amp;characterEncoding=utf-8&amp;autoReconnect=true</url>
+            <user>blrcart</user>
+            <password>blrcart</password>
+        </driver>
+    </database-->
+</web-app>
+
